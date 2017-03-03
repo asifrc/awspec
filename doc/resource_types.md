@@ -3,6 +3,7 @@
 [alb](#alb)
 | [ami](#ami)
 | [autoscaling_group](#autoscaling_group)
+| [cloudformation_stack](#cloudformation_stack)
 | [cloudtrail](#cloudtrail)
 | [cloudwatch_alarm](#cloudwatch_alarm)
 | [cloudwatch_event](#cloudwatch_event)
@@ -122,6 +123,13 @@ end
 ```
 
 ### its(:auto_scaling_group_name), its(:auto_scaling_group_arn), its(:launch_configuration_name), its(:min_size), its(:max_size), its(:desired_capacity), its(:default_cooldown), its(:health_check_type), its(:health_check_grace_period), its(:created_time), its(:placement_group), its(:vpc_zone_identifier), its(:status), its(:new_instances_protected_from_scale_in)
+## <a name="cloudformation_stack">cloudformation_stack</a>
+
+CloudformationStack resource type.
+
+### exist
+
+### its(:stack_id), its(:stack_name), its(:change_set_id), its(:description), its(:creation_time), its(:last_updated_time), its(:stack_status), its(:stack_status_reason), its(:disable_rollback), its(:timeout_in_minutes), its(:role_arn)
 ## <a name="cloudtrail">cloudtrail</a>
 
 Cloudtrail resource type.
